@@ -1,0 +1,5 @@
+package model;
+
+public class Case {
+	private final String ligne;
+}

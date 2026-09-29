@@ -1,0 +1,10 @@
+package main;
+
+import model.Board;
+
+public class Main {
+    public static void main(String[] args) {
+        // Création du plateau (ce qui va initialiser les cases et le printBoard)
+        Board board = new Board();
+    }
+}

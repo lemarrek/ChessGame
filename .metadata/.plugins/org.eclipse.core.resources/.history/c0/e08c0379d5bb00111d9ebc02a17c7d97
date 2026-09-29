@@ -1,0 +1,7 @@
+package model;
+
+public class Case {
+	private final String ligne;
+	private final int colonne;
+	private Piece piece;
+}

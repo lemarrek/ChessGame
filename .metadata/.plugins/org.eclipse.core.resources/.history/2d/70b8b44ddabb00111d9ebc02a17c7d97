@@ -1,0 +1,8 @@
+package main;
+
+public class Main {
+	private int Main() {
+		new Board();
+		return 0;
+	}
+}

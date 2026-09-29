@@ -1,0 +1,54 @@
+package model;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Board {
+	private Square[][] board;
+	
+	public Board() {
+		board = new Square[8][8];
+		initBoard();
+		printBoard();
+	}
+
+	private void initBoard() {
+		Color ColorSquare=Color.WHITE;
+		for (int row=0; row<8; row++) {
+			for (int col=0; col<8; col++) {
+				if((row%2==0 && col%2==1)||(row%2==1 && col%2==0)) {
+					ColorSquare=Color.BLACK;
+				} else if ((row%2==0 && col%2==0)||(row%2==1 && col%2==1)) {
+					ColorSquare=Color.WHITE;
+				}
+				board[row][col]=new Square(row, col, null, ColorSquare);
+			}
+		}
+	}
+	
+	private void printBoard() {
+	    System.out.println("  -------------------");
+
+	    for (int row = 0; row < 8; row++) {
+	        System.out.print((8 - row) + " | ");
+
+	        for (int col = 0; col < 8; col++) {
+	            Square square = board[row][col];
+	            
+	            if (square.getPiece() != null) {
+	                System.out.print("P "); 
+	            } else {
+	                if (square.getColor() == Color.WHITE) {
+	                    System.out.print("O ");
+	                } else {
+	                    System.out.print("X ");
+	                }
+	            }
+	        }
+	        System.out.println("|");
+	    }
+
+	    System.out.println("  -------------------");
+	    System.out.println("    A B C D E F G H");
+	}
+}

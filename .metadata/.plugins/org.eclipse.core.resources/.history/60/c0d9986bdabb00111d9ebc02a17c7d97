@@ -1,0 +1,10 @@
+package main;
+
+import model.Board;
+
+public class Main {
+	private int Main() {
+		new Board();
+		return 0;
+	}
+}
