@@ -1,11 +1,6 @@
-# Eclipse
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings/
-bin/
-
-# Fichiers système
-.DS_Store
-Thumbs.db
+/.settings/
+/.recommenders/
+/bin/
+*.class
+/.project
+/.classpath
