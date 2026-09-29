@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+/home/keke/INFO5/ChessGame/.metadata/.plugins/org.eclipse.jdt.core
-355813568.index
-3541655270.index
-1865797976.index
