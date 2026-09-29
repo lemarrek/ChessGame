@@ -1,5 +1,0 @@
-package model;
-
-public enum Couleur {
-	NOIR, BLANC
-}
